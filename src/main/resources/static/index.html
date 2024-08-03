@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Adivinanza de Números</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>Juego de Adivinanza de Números</h1>
+    <div id="gameControls">
+        <button id="startButton" class="btn-primary">Iniciar Juego</button>
+        <button id="restartButton" class="btn-secondary" style="display: none;">Reiniciar Juego</button>
+    </div>
+    <div id="gameStatus" style="display: none;">
+        <input type="number" id="guessInput" min="1" max="100" class="input-number">
+        <button id="guessButton" class="btn-primary">Adivinar</button>
+        <p id="attemptsRemaining" class="message">Intentos restantes: <span id="attemptsCount"></span></p>
+    </div>
+    <div id="result" style="display: none;">
+        <p id="resultMessage" class="result-message"></p>
+    </div>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>
